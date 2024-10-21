@@ -17,8 +17,6 @@ app.use(
 );
 app.use(express.json());
 app.use(cookieParser());
-// require('crypto').randomBytes(64).toString('hex');
-// MongoDB URI
 const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri, {
   serverApi: {
